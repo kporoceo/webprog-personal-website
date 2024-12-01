@@ -86,3 +86,23 @@ span {
   border-radius: 5px;
   border: 1px solid #00ff00;
 }
+
+
+section{
+  border: 10px solid #00ff00;
+  height: 90vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  border:10px;
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
