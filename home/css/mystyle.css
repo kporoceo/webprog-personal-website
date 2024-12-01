@@ -100,22 +100,21 @@ section {
   padding: 20px; /* Add space inside the section */
 }
 
-/* Container Styling */
 .container {
-  border: 2px solid #00ff00; /* Thin border for visibility */
-  max-width: 90%; /* Adjust width to fit within section */
-  width: 800px; /* Target fixed width for better control */
-  margin: auto; /* Center horizontally */
+  border: 2px solid #00ff00; /* Border for visibility */
+  max-width: 90%; /* Increase this to allow more width, or use a fixed value */
+  width: 1100px; /* Increase the container width */
+  margin: auto; /* Keep it centered */
   padding: 20px; /* Internal spacing */
-  display: flex; /* Enable Flexbox */
-  flex-wrap: wrap; /* Allow content to wrap within the container */
-  gap: 20px; /* Add space between child elements */
-  justify-content: center; /* Center child items horizontally */
-  align-items: flex-start; /* Align child items to the top */
-  text-align: left; /* Keep text left-aligned */
-  box-sizing: border-box; /* Include padding/border in dimensions */
-  overflow: hidden; /* Prevent content overflow */
+  display: flex; /* Flexbox for alignment */
+  flex-wrap: wrap; /* Allow content to wrap */
+  gap: 20px; /* Add spacing between items */
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align items at the top */
+  text-align: left; /* Keep text aligned left */
+  box-sizing: border-box; /* Include border and padding in size */
 }
+
 
 /* Individual Content Blocks */
 .container > div {
