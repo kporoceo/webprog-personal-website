@@ -7,38 +7,55 @@ body {
   padding: 0;
 }
 
-/* Container to Center Content */
+/* Section Styling */
+section {
+  border: 5px solid #00ff00; /* Outer border */
+  padding: 20px;
+  margin: 20px auto; /* Center the section */
+  background-color: #000000;
+  box-sizing: border-box; /* Include padding in width/height */
+  display: flex;
+  justify-content: center;
+}
+
+/* Container Styling */
 .container {
-  max-width: 800px; /* Restrict width */
-  margin: 0 auto; /* Center horizontally */
-  padding: 20px; /* Add some padding */
-  text-align: left; /* Align content within container */
+  display: flex;
+  flex-direction: column; /* Stack boxes vertically */
+  gap: 20px; /* Space between boxes */
+  width: 90%; /* Responsive container width */
+  max-width: 800px; /* Limit the maximum width */
+  margin: auto; /* Center the container */
+  padding: 20px; /* Internal spacing */
+  box-sizing: border-box;
 }
 
-/* Header and Subheader Styles */
+/* Individual Boxes */
+.container > div {
+  width: 100%; /* Full-width boxes */
+  padding: 10px; /* Internal spacing */
+  border: 2px solid #00ff00; /* Green border */
+  box-sizing: border-box; /* Include padding/border in total size */
+  text-align: left; /* Left-align text */
+}
+
+/* Header Styles */
 h1, h3 {
-  color: #00ff00;
+  color: #00ff00; /* Green headers */
   border-bottom: 2px solid #00ff00;
-  padding-bottom: 5px;
-  text-align: center; /* Center text for headers */
-  margin: 20px 0; /* Add vertical spacing for readability */
-}
-
-hr {
-  border: 1px solid #00ff00;
+  text-align: center;
   margin: 20px 0;
 }
 
-/* Image Styles */
+/* Image Styling */
 img {
-  display: block; /* Center the image */
-  margin: 0 auto; /* Center horizontally */
-  width: 150px; /* Set consistent size */
-  height: 150px; /* Set consistent size */
-  border-radius: 50%; /* Circular shape */
+  display: block; /* Center image */
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular image */
   border: 3px solid #00ff00; /* Green border */
 }
-
 
 /* Link Styles */
 a {
@@ -51,7 +68,7 @@ a:hover {
   color: #ffffff; /* White hover effect */
 }
 
-/* Table Styles */
+/* Table Styling */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -72,62 +89,3 @@ th {
 td {
   padding: 10px;
 }
-
-/* List Styles */
-ul {
-  list-style: none; /* Remove bullets */
-  padding: 0;
-}
-
-ul li {
-  margin: 10px 0;
-  color: #a0ffa0; /* Muted green for readability */
-}
-
-/* Span Highlight */
-span {
-  background-color: #111111;
-  color: #00ff00;
-  padding: 3px 5px;
-  border-radius: 5px;
-  border: 1px solid #00ff00;
-}
-
-
-/* Section Styling */
-section {
-  width: 100%; /* Allow full-width section */
-  max-width: none; /* Remove any width limits */
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-
-.container {
-  max-width: 100%; /* Remove unnecessary restrictions */
-  width: 1100px; /* Fixed width */
-  padding: 20px; /* Internal spacing */
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Space between child items */
-  justify-content: flex-start; /* Align child elements to the left */
-  align-items: flex-start; /* Align items at the top */
-  box-sizing: border-box; /* Include padding and border in total width */
-}
-
-
-
-/* Individual Content Blocks */
-.container > div {
-  flex: 1 1 calc(33.33% - 40px); /* Each block takes 1/3 width minus gap */
-  min-width: 250px; /* Minimum block width */
-  max-width: 400px; /* Optional max width */
-  padding: 10px;
-  margin: 0;
-  border: 2px solid #00ff00;
-  box-sizing: border-box;
-}
-
