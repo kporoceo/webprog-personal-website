@@ -88,21 +88,27 @@ span {
 }
 
 
-section{
-  border: 10px solid #00ff00;
-  height: 90vh;
-  display:flex;
-  align-items: center;
-  justify-content: center;
+section {
+  border: 10px solid #00ff00; /* Add visible border */
+  height: 90vh; /* Adjust height to 90% of the viewport */
+  display: flex; /* Enable Flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  box-sizing: border-box; /* Include border in height/width calculations */
+  padding: 20px; /* Add spacing inside the section */
 }
 
-.container{
-  border:10px;
-  max-width: 700px;
-  width: 100%;
-  margin: auto;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.container {
+  border: 10px solid #00ff00; /* Add visible border */
+  max-width: 700px; /* Set maximum width */
+  width: 100%; /* Allow it to scale with parent */
+  margin: auto; /* Center horizontally */
+  height: auto; /* Remove fixed height to adjust to content */
+  padding: 20px; /* Add spacing inside */
+  display: flex; /* Enable Flexbox for centering */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  text-align: center; /* Center text within container */
+  box-sizing: border-box; /* Include padding/borders in dimensions */
 }
