@@ -1,26 +1,26 @@
-/* General Styles */
+/* Global Styles */
 body {
   background-color: #000000; /* Black background */
   color: #00ff00; /* Cyber green text */
-  font-family: 'Courier New', Courier, monospace; /* Cyberpunk font */
+  font-family: 'Courier New', Courier, monospace;
   margin: 0;
   padding: 0;
 }
 
-/* Container for Centering Content */
+/* Container to Center Content */
 .container {
-  max-width: 800px; /* Restrict content width */
-  margin: 0 auto; /* Center the content horizontally */
-  padding: 20px; /* Add some padding for spacing */
-  text-align: center; /* Center text content */
+  max-width: 800px; /* Restrict width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Add some padding */
+  text-align: left; /* Align content within container */
 }
 
 /* Header and Subheader Styles */
 h1, h3 {
   color: #00ff00;
-  border-bottom: 2px solid #00ff00; /* Underline effect */
+  border-bottom: 2px solid #00ff00;
   padding-bottom: 5px;
-  text-align: center; /* Ensure headers are centered */
+  text-align: center; /* Center text for headers */
 }
 
 hr {
@@ -85,20 +85,4 @@ span {
   padding: 3px 5px;
   border-radius: 5px;
   border: 1px solid #00ff00;
-}
-
-/* Button Styles (if any future use) */
-button {
-  background: #00ff00;
-  color: #000000;
-  border: none;
-  padding: 10px 15px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-  background: #00cc00;
-  transform: scale(1.1);
 }
