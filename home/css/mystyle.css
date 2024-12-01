@@ -93,7 +93,7 @@ span {
 /* Section Styling */
 section {
   border: 5px solid #00ff00; /* Adjust border size */
-  height: 90vh; /* Occupy 90% of the viewport height */
+  height: 100vh; /* Occupy 90% of the viewport height */
   display: flex; /* Enable Flexbox */
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
