@@ -93,7 +93,7 @@ span {
 /* Section Styling */
 section {
   border: 5px solid #00ff00; /* Adjust border size */
-  height: 100vh; /* Occupy 90% of the viewport height */
+  height: 90vh; /* Occupy 90% of the viewport height */
   display: flex; /* Enable Flexbox */
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
@@ -102,24 +102,27 @@ section {
 }
 
 .container {
-  max-width: 100%; /* Remove unnecessary restrictions */
-  width: 1100px; /* Fixed width */
+  border: 2px solid #00ff00; /* Border for visibility */
+  max-width: 90%; /* Increase this to allow more width, or use a fixed value */
+  width: 1100px; /* Increase the container width */
+  margin: auto; /* Keep it centered */
   padding: 20px; /* Internal spacing */
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Space between child items */
-  justify-content: flex-start; /* Align child elements to the left */
+  display: flex; /* Flexbox for alignment */
+  flex-wrap: wrap; /* Allow content to wrap */
+  gap: 20px; /* Add spacing between items */
+  justify-content: center; /* Center content horizontally */
   align-items: flex-start; /* Align items at the top */
-  box-sizing: border-box; /* Include padding and border in total width */
+  text-align: left; /* Keep text aligned left */
+  box-sizing: border-box; /* Include border and padding in size */
 }
 
+
+/* Individual Content Blocks */
 .container > div {
-  flex: 1 1 calc(33.33% - 40px); /* Each block takes 1/3 width minus gap */
-  min-width: 250px; /* Minimum block width */
-  max-width: 400px; /* Optional max width */
-  padding: 10px;
-  margin: 0;
-  border: 2px solid #00ff00;
-  box-sizing: border-box;
+  flex: 1 1 300px; /* Each block takes up equal space */
+  min-width: 250px; /* Ensure a minimum width */
+  max-width: 400px; /* Prevent blocks from being too wide */
+  padding: 10px; /* Add spacing inside blocks */
+  border: 2px solid #00ff00; /* Border around individual sections */
+  box-sizing: border-box; /* Ensure proper spacing calculations */
 }
