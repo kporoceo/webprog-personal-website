@@ -7,11 +7,20 @@ body {
   padding: 0;
 }
 
+/* Container for Centering Content */
+.container {
+  max-width: 800px; /* Restrict content width */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px; /* Add some padding for spacing */
+  text-align: center; /* Center text content */
+}
+
+/* Header and Subheader Styles */
 h1, h3 {
   color: #00ff00;
-  text-align: center;
   border-bottom: 2px solid #00ff00; /* Underline effect */
   padding-bottom: 5px;
+  text-align: center; /* Ensure headers are centered */
 }
 
 hr {
