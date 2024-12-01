@@ -1,13 +1,95 @@
+/* General Styles */
 body {
-    background-color: lightblue;
-  }
-  
-  h1 {
-    color: white;
-    text-align: center;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
+  background-color: #000000; /* Black background */
+  color: #00ff00; /* Cyber green text */
+  font-family: 'Courier New', Courier, monospace; /* Cyberpunk font */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3 {
+  color: #00ff00;
+  text-align: center;
+  border-bottom: 2px solid #00ff00; /* Underline effect */
+  padding-bottom: 5px;
+}
+
+hr {
+  border: 1px solid #00ff00;
+  margin: 20px 0;
+}
+
+/* Image Styles */
+img {
+  border: 3px solid #00ff00;
+  border-radius: 50%;
+}
+
+/* Link Styles */
+a {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ffffff; /* White hover effect */
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 2px solid #00ff00;
+  text-align: center;
+  color: #a0ffa0; /* Slightly muted green */
+}
+
+th {
+  background-color: #111111; /* Darker black for header */
+  color: #00ff00;
+}
+
+td {
+  padding: 10px;
+}
+
+/* List Styles */
+ul {
+  list-style: none; /* Remove bullets */
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  color: #a0ffa0; /* Muted green for readability */
+}
+
+/* Span Highlight */
+span {
+  background-color: #111111;
+  color: #00ff00;
+  padding: 3px 5px;
+  border-radius: 5px;
+  border: 1px solid #00ff00;
+}
+
+/* Button Styles (if any future use) */
+button {
+  background: #00ff00;
+  color: #000000;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #00cc00;
+  transform: scale(1.1);
+}
