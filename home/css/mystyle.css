@@ -7,121 +7,105 @@ body {
   padding: 0;
 }
 
-/* Container to Center Content */
+/* Section Styling */
+section {
+  border: 5px solid #00ff00; /* Outer border */
+  padding: 20px; /* Inner spacing */
+  margin: 20px auto; /* Center the section */
+  box-sizing: border-box; /* Include padding in total size */
+  background-color: #000000; /* Black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack content vertically */
+  min-height: 100vh; /* Ensure the section covers the viewport */
+}
+
+/* Container Styling */
 .container {
-  max-width: 800px; /* Restrict width */
-  margin: 0 auto; /* Center horizontally */
-  padding: 20px; /* Add some padding */
-  text-align: left; /* Align content within container */
+  width: 90%; /* Responsive width */
+  max-width: 800px; /* Limit maximum width */
+  margin: 0 auto; /* Center the content horizontally */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  gap: 20px; /* Space between sections */
+  box-sizing: border-box;
+}
+
+/* Individual Content Boxes */
+.container > div {
+  width: 100%; /* Full width */
+  border: 2px solid #00ff00; /* Green border */
+  padding: 10px; /* Inner spacing */
+  box-sizing: border-box; /* Include padding in total size */
+  text-align: left; /* Left-align content */
+  background-color: #111111; /* Slightly darker background for contrast */
 }
 
 /* Header and Subheader Styles */
 h3 {
-  color: #00ff00;
-  border-bottom: 2px solid #00ff00;
+  color: #00ff00; /* Cyber green text */
+  border-bottom: 2px solid #00ff00; /* Bottom border for headers */
   padding-bottom: 5px;
-  text-align: center; /* Center text for headers */
-  margin: 20px 0; /* Add vertical spacing for readability */
-}
-
-hr {
-  border: 1px solid #00ff00;
-  margin: 20px 0;
+  text-align: center; /* Center-align headers */
+  margin: 10px 0; /* Add spacing */
 }
 
 /* Image Styles */
 img {
-  border: 3px solid #00ff00;
-  border-radius: 50%;
+  display: block; /* Block-level element */
+  margin: 0 auto; /* Center image */
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  border-radius: 50%; /* Circular image */
+  border: 3px solid #00ff00; /* Green border */
 }
-
 
 /* Link Styles */
 a {
-  color: #00ff00;
-  text-decoration: none;
-  font-weight: bold;
+  color: #00ff00; /* Cyber green text */
+  text-decoration: none; /* Remove underline */
 }
 
 a:hover {
-  color: #ffffff; /* White hover effect */
+  color: #ffffff; /* White on hover */
 }
 
 /* Table Styles */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Remove spacing between cells */
+  margin: 10px 0;
 }
 
-table, th, td {
-  border: 2px solid #00ff00;
-  text-align: center;
-  color: #a0ffa0; /* Slightly muted green */
+th, td {
+  border: 2px solid #00ff00; /* Green border */
+  text-align: center; /* Center-align text */
+  color: #a0ffa0; /* Muted green for readability */
+  padding: 10px; /* Space inside cells */
 }
 
 th {
-  background-color: #111111; /* Darker black for header */
-  color: #00ff00;
-}
-
-td {
-  padding: 10px;
+  background-color: #111111; /* Darker header background */
 }
 
 /* List Styles */
 ul {
-  list-style: none; /* Remove bullets */
+  list-style: none; /* Remove bullet points */
   padding: 0;
+  margin: 0;
 }
 
 ul li {
-  margin: 10px 0;
-  color: #a0ffa0; /* Muted green for readability */
+  margin: 10px 0; /* Space between items */
+  color: #a0ffa0; /* Muted green text */
 }
 
-/* Span Highlight */
+/* Highlighted Span */
 span {
-  background-color: #111111;
-  color: #00ff00;
+  background-color: #111111; /* Slightly darker background */
+  color: #00ff00; /* Cyber green text */
   padding: 3px 5px;
   border-radius: 5px;
   border: 1px solid #00ff00;
 }
-
-
-/* Section Styling */
-section {
-  border: 5px solid #00ff00; /* Adjust border size */
-  height: 100vh; /* Occupy 90% of the viewport height */
-  display: flex; /* Enable Flexbox */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  box-sizing: border-box; /* Include border/padding in total size */
-  padding: 20px; /* Add space inside the section */
-}
-
-.container {
-  max-width: 100%; /* Remove unnecessary restrictions */
-  width: 1100px; /* Fixed width */
-  padding: 20px; /* Internal spacing */
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Space between child items */
-  justify-content: flex-start; /* Align child elements to the left */
-  align-items: flex-start; /* Align items at the top */
-  box-sizing: border-box; /* Include padding and border in total width */
-}
-
-
-.container > div {
-  flex: 1 1 calc(33.33% - 40px); /* Each block takes 1/3 width minus gap */
-  min-width: 250px; /* Minimum block width */
-  max-width: 400px; /* Optional max width */
-  padding: 10px;
-  margin: 0;
-  border: 2px solid #00ff00;
-  box-sizing: border-box;
-}
-
