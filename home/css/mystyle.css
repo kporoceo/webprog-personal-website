@@ -16,7 +16,7 @@ body {
 }
 
 /* Header and Subheader Styles */
-h1, h3 {
+h3 {
   color: #00ff00;
   border-bottom: 2px solid #00ff00;
   padding-bottom: 5px;
