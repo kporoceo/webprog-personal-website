@@ -31,12 +31,8 @@ hr {
 
 /* Image Styles */
 img {
-  display: block; /* Treat image as a block element */
-  margin: 0 auto; /* Center horizontally */
-  width: 150px; /* Fixed width */
-  height: 150px; /* Fixed height */
-  border-radius: 50%; /* Circular image */
-  border: 3px solid #00ff00; /* Green border */
+  border: 3px solid #00ff00;
+  border-radius: 50%;
 }
 
 
