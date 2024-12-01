@@ -21,6 +21,7 @@ h1, h3 {
   border-bottom: 2px solid #00ff00;
   padding-bottom: 5px;
   text-align: center; /* Center text for headers */
+  margin: 20px 0; /* Add vertical spacing for readability */
 }
 
 hr {
@@ -88,27 +89,40 @@ span {
 }
 
 
+/* Section Styling */
 section {
-  border: 10px solid #00ff00; /* Add visible border */
-  height: 90vh; /* Adjust height to 90% of the viewport */
+  border: 5px solid #00ff00; /* Adjust border size */
+  height: 90vh; /* Occupy 90% of the viewport height */
   display: flex; /* Enable Flexbox */
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
-  box-sizing: border-box; /* Include border in height/width calculations */
-  padding: 20px; /* Add spacing inside the section */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  box-sizing: border-box; /* Include border/padding in total size */
+  padding: 20px; /* Add space inside the section */
 }
 
-
+/* Container Styling */
 .container {
-  border: 10px solid #00ff00; /* Add visible border */
-  max-width: 700px; /* Set maximum width */
-  width: 100%; /* Allow it to scale with parent */
+  border: 2px solid #00ff00; /* Thin border for visibility */
+  max-width: 90%; /* Adjust width to fit within section */
+  width: 800px; /* Target fixed width for better control */
   margin: auto; /* Center horizontally */
-  height: auto; /* Remove fixed height to adjust to content */
-  padding: 20px; /* Add spacing inside */
-  display: flex; /* Enable Flexbox for centering */
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
-  text-align: center; /* Center text within container */
-  box-sizing: border-box; /* Include padding/borders in dimensions */
+  padding: 20px; /* Internal spacing */
+  display: flex; /* Enable Flexbox */
+  flex-wrap: wrap; /* Allow content to wrap within the container */
+  gap: 20px; /* Add space between child elements */
+  justify-content: center; /* Center child items horizontally */
+  align-items: flex-start; /* Align child items to the top */
+  text-align: left; /* Keep text left-aligned */
+  box-sizing: border-box; /* Include padding/border in dimensions */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+/* Individual Content Blocks */
+.container > div {
+  flex: 1 1 300px; /* Each block takes up equal space */
+  min-width: 250px; /* Ensure a minimum width */
+  max-width: 400px; /* Prevent blocks from being too wide */
+  padding: 10px; /* Add spacing inside blocks */
+  border: 2px solid #00ff00; /* Border around individual sections */
+  box-sizing: border-box; /* Ensure proper spacing calculations */
 }
