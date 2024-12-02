@@ -1,28 +1,64 @@
+/* Flex Container */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px; /* Adds space between the boxes */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: flex-start; /* Aligns items to the top of the row */
+    padding: 20px; /* Adds padding around the entire container */
     background-color: DodgerBlue;
-  }
-  
-  .flex-container > div {
+    border-radius: 10px; /* Adds rounded corners to the container */
+}
+
+/* Flex Items */
+.flex-container > div {
     background-color: #d38acf;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 10px;
-  }
+    flex: 1 1 calc(33.33% - 40px); /* Responsive sizing: 3 items per row */
+    max-width: calc(33.33% - 40px); /* Max width ensures consistency */
+    margin: 0; /* Remove default margins */
+    padding: 15px; /* Adds space inside the box */
+    text-align: left; /* Align text to the left */
+    line-height: 1.6; /* Improves readability */
+    font-size: 14px; /* Slightly larger text for better readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
 
-  img {
-    display: block; /* Block-level element */
-    margin: 0 auto; /* Center image */
-    width: 150px; /* Fixed width */
-    height: 150px; /* Fixed height */
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .flex-container > div {
+        flex: 1 1 calc(50% - 40px); /* 2 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-container > div {
+        flex: 1 1 100%; /* Full-width items on very small screens */
+    }
+}
+
+/* Profile Image */
+img {
+    display: block;
+    margin: 20px auto; /* Centers the image with space above and below */
+    width: 200px; /* Larger image size for better emphasis */
+    height: 200px; /* Maintain square aspect ratio */
     border-radius: 50%; /* Circular image */
-    border: 3px solid dodgerblue; 
-  }
+    border: 5px solid dodgerblue; /* Bold border for focus */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for depth */
+    object-fit: cover; /* Ensures the image fits nicely inside the circle */
+}
 
-  h1{
-    color:#d38acf;
-    text-align: center; 
-  }
+/* Headline */
+h1 {
+    color: #d38acf;
+    text-align: center;
+    font-size: 2rem; /* Larger font for emphasis */
+    margin-bottom: 20px; /* Adds space below the headline */
+}
+
+.highlight {
+    border: 1px solid black;
+    padding: 2px 4px;
+}
+
