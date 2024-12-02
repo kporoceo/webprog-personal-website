@@ -1,0 +1,29 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #d38acf;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  img {
+    display: block; /* Block-level element */
+    margin: 0 auto; /* Center image */
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    border-radius: 50%; /* Circular image */
+    border: 3px solid dodgerblue; 
+  }
+
+  h1{
+    color:#d38acf;
+    text-align: center; 
+    border-bottom: 2px solid dodgerblue;
+  }
