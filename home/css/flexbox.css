@@ -9,8 +9,8 @@
     width: 100px;
     margin: 10px;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+    line-height: 50px;
+    font-size: 10px;
   }
 
   img {
@@ -25,5 +25,4 @@
   h1{
     color:#d38acf;
     text-align: center; 
-    border-bottom: 2px solid dodgerblue;
   }
