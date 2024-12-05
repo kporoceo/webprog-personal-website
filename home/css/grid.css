@@ -86,29 +86,3 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Single-column layout */
-        grid-template-areas:
-            "header"
-            "menu"
-            "main"
-            "below-main"
-            "below-right"
-            "footer";
-    }
-
-    /* Smaller font and adjusted padding on smaller screens */
-    .grid-container > div {
-        padding: 15px;
-        font-size: 14px;
-    }
-
-    /* Resize image for smaller screens */
-    img {
-        width: 80px;
-        height: 80px;
-    }
-}
