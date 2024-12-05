@@ -27,14 +27,14 @@ img {
 /* Main Grid Container */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 equal-width columns */
+    grid-template-columns: 250px 1fr 250px; /* 3 columns: 250px for menu and right, 1fr for main content */
     grid-template-areas:
-        "header header header header header header"
-        "menu main main main right right"
-        "menu below-main below-main below-right below-right"
-        "footer footer footer footer footer footer";
-    gap: 10px;
-    padding: 10px;
+        "header header header"
+        "menu main right"
+        "below-main below-main below-right"
+        "footer footer footer";
+    gap: 20px;
+    padding: 20px;
     width: 100%; /* Full width of the screen */
     background-color: #2196F3;
 }
@@ -96,7 +96,6 @@ a:hover {
             "menu"
             "main"
             "below-main"
-            "right"
             "below-right"
             "footer";
     }
