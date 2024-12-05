@@ -1,0 +1,146 @@
+/* General styling for the body and h1 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+  
+  /* Styling for the profile picture */
+  img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Main Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu below-main below-main below-right below-right'
+      'menu above-footer above-footer above-footer above-footer'
+      'menu footer footer footer footer footer';
+    grid-template-columns: repeat(6, 1fr); /* 6 equal-width columns */
+    grid-template-rows: auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    max-width: 1200px; /* Center align for large screens */
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Grid items by area */
+  .item1 {
+    grid-area: header;
+  }
+  
+  .item2 {
+    grid-area: menu;
+  }
+  
+  .item3 {
+    grid-area: main;
+  }
+  
+  .item4 {
+    grid-area: right;
+  }
+  
+  .item5 {
+    grid-area: below-main;
+  }
+  
+  .item6 {
+    grid-area: below-right;
+  }
+
+  .item7 {
+    grid-area: above-footer;
+  }
+
+  .item8 {
+    grid-area: footer;
+  }
+
+/* General Styling for Grid Items */
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  }
+  
+  /* Highlight text styling */
+  .highlight {
+    background-color: #ffe58a;
+    padding: 0 4px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Table styling for "Goals in Life" */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px 0;
+    font-size:14px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  table th {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  table td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Link styling */
+  a {
+    color: #2196F3;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+      grid-template-areas:
+        'header'
+        'menu'
+        'main'
+        'below-main'
+        'right'
+        'below-right'
+        'above-footer'
+        'footer';
+      grid-template-columns: 1fr; /* Single-column layout */
+    }
+  }
+  
