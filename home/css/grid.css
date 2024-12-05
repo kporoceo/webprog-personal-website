@@ -103,29 +103,3 @@ a:hover {
     text-decoration: underline;
 }
   
-/* Responsive Design */
-@media (max-width: 768px) {
-    .grid-container {
-      grid-template-areas:
-        'header'
-        'menu'
-        'main'
-        'below-main'
-        'right'
-        'below-right'
-        'footer';
-      grid-template-columns: 1fr; /* Single-column layout */
-    }
-
-    /* Adjusted Grid Item Styling */
-    .grid-container > div {
-        text-align: center;
-        padding: 15px;
-        font-size: 14px;
-    }
-
-    img {
-        width: 80px;
-        height: 80px;
-    }
-}
