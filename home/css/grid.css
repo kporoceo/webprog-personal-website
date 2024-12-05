@@ -6,7 +6,7 @@ body {
     background-color: #f5f5f5;
     color: #333;
 }
-  
+
 h1 {
     text-align: center;
     margin: 20px 0;
@@ -27,50 +27,38 @@ img {
 /* Main Grid Container */
 .grid-container {
     display: grid;
-    grid-template-areas:
-      "header header header header header header"
-      "menu main main main right right"
-      "menu below-main below-main below-right below-right"
-      "footer footer footer footer footer footer";
     grid-template-columns: repeat(6, 1fr); /* 6 equal-width columns */
-    grid-template-rows: auto; /* Automatically adjust rows */
+    grid-template-areas:
+        "header header header header header header"
+        "menu main main main right right"
+        "menu below-main below-main below-right below-right"
+        "footer footer footer footer footer footer";
     gap: 10px;
-    background-color: #2196F3;
     padding: 10px;
-    max-width: 1200px;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Full width of the screen */
+    background-color: #2196F3;
 }
 
-/* Assign Grid Areas */
-.item1 { grid-area: header; }        /* Header */
-.item2 { grid-area: menu; }          /* Menu */
-.item3 { grid-area: main; }          /* Main Content */
-.item4 { grid-area: right; }         /* Right Sidebar */
-.item5 { grid-area: below-main; }    /* Below Main */
-.item6 { grid-area: below-right; }   /* Below Right */
-.item7 { grid-area: footer; }        /* Footer */
+/* Grid Item Areas */
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: below-main; }
+.item6 { grid-area: below-right; }
+.item7 { grid-area: footer; }
 
-/* Styling Grid Items */
+/* Styling for the grid items */
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: left;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Highlight Text Styling */
-.highlight {
-    background-color: #ffe58a;
-    padding: 0 4px;
-    font-weight: bold;
-    color: #333;
-}
-
-/* Table Styling for "Goals in Life" */
+/* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -80,8 +68,8 @@ table {
 
 table th, table td {
     border: 1px solid #ddd;
-    text-align: center;
     padding: 8px;
+    text-align: center;
 }
 
 table th {
@@ -89,11 +77,7 @@ table th {
     color: white;
 }
 
-table td {
-    background-color: #f9f9f9;
-}
-
-/* Link Styling */
+/* Link styling */
 a {
     color: #2196F3;
     text-decoration: none;
@@ -106,23 +90,24 @@ a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .grid-container {
+        grid-template-columns: 1fr; /* Single-column layout */
         grid-template-areas:
-          "header"
-          "menu"
-          "main"
-          "below-main"
-          "right"
-          "below-right"
-          "footer";
-        grid-template-columns: 1fr; /* Single column */
+            "header"
+            "menu"
+            "main"
+            "below-main"
+            "right"
+            "below-right"
+            "footer";
     }
 
+    /* Smaller font and adjusted padding on smaller screens */
     .grid-container > div {
-        text-align: center;
         padding: 15px;
         font-size: 14px;
     }
 
+    /* Resize image for smaller screens */
     img {
         width: 80px;
         height: 80px;
