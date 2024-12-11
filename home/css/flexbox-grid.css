@@ -33,67 +33,12 @@ body {
 /* Grid Container for sections like About Me, Education, etc. */
 .grid-container {
     display: grid;
-    grid-template-columns: 250px 1fr; /* 2-column layout: left side 250px, right side auto width */
-    grid-template-areas:
-        "about-me main"
-        "education course"
-        "it-experience hobbies"
-        "goals picture-gallery";
+    grid-template-columns: 1fr; /* One column layout */
     gap: 20px;
 }
 
 /* Styling for each section in the grid */
-.about-me {
-    grid-area: about-me;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.education {
-    grid-area: education;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.course {
-    grid-area: course;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.it-experience {
-    grid-area: it-experience;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.hobbies {
-    grid-area: hobbies;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.goals {
-    grid-area: goals;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Picture Gallery Section */
-.picture-gallery {
-    grid-area: picture-gallery;
+.about-me, .education, .course, .it-experience, .hobbies, .goals, .picture-gallery {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
@@ -130,4 +75,3 @@ table th {
 table td {
     background-color: #f9f9f9;
 }
-
